@@ -8,6 +8,16 @@ function cubes(){
 
         for (let x = -3; x <= 3; x++){
             let div = document.createElement('div');
+            div.style.setProperty('--x', x);
+            div.style.setProperty('--y', 0);
+
+            let span = document.createElement('span');
+            span.style.setProperty('--i', 3);
+            div.appendChild(span);
+            cube.appendChild(div);
         }
+
+        container.appendChild(cube);
     })
 }
+cubes()
