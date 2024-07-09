@@ -40,6 +40,7 @@ body{
 .container .cube div span.active{
     background: #ef4149;
     transform: translate(0, -50px);
+    animation: animate 2s ease-in-out infinite;
 }
 
 .container .cube div span::before{
@@ -56,7 +57,6 @@ body{
 
 .container .cube div span.active::before{
     background: #f75d64;
-    animation: animate 2s ease-in-out infinite;
 }
 
 .container .cube div span::after{
@@ -75,5 +75,14 @@ body{
 .container .cube div span.active::after{
     background: #f14e55;
     box-shadow: -150px 150px 5px rgba(0,0,0,0.15);
+}
+
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
 }
 
