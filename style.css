@@ -54,6 +54,11 @@ body{
     transition: 1.5s;
 }
 
+.container .cube div span.active::before{
+    background: #f75d64;
+    animation: animate 2s ease-in-out infinite;
+}
+
 .container .cube div span::after{
     content: '';
     position: absolute;
@@ -65,5 +70,10 @@ body{
     transform: skewX(45deg);
     transition: 1.5s;
     box-shadow: -100px 100px 5px rgba(0,0,0,0.15);
+}
+
+.container .cube div span.active::after{
+    background: #f14e55;
+    box-shadow: -150px 150px 5px rgba(0,0,0,0.15);
 }
 
