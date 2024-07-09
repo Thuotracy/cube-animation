@@ -19,5 +19,20 @@ function cubes(){
 
         container.appendChild(cube);
     })
+    activeRandomCube();
+}
+
+function activeRandomCube(){
+    let spans = document.querySelectorAll('.cube span');
+    setInterval(() => {
+        let randomIndex = Math.floor(Math.random() * spans.length);
+        let randomSpan = spans[randomIndex];
+
+        randomSpan.classList.add('active');
+
+        setTimeout(() => {
+            randomSpan.classList.remove('active');
+        },2000)
+    },500)
 }
 cubes()
