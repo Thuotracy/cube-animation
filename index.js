@@ -5,5 +5,9 @@ function cubes(){
         let cube = document.createElement('div');
         cube.classList.add('cube');
         cube.style.setProperty('--z',z);
+
+        for (let x = -3; x <= 3; x++){
+            let div = document.createElement('div');
+        }
     })
 }
