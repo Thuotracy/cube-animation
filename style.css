@@ -15,14 +15,17 @@ body{
 
 .container{
     position: relative;
+    transform: skewY(-20deg);
 }
 
 .container .cube{
     position: relative;
+    translate: calc(var(--z) * 60px) calc(var(--z) * 60px);
 }
 
 .container .cube div{
     position: absolute;
+    translate: calc(-70px * var(--x)) calc(-70px * var(--y));
 }
 
 .container .cube div span{
