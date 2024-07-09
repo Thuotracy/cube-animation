@@ -12,3 +12,12 @@ body{
     background-color: grey;
     overflow: hidden;
 }
+
+.container{
+    position: relative;
+}
+
+.container .cube{
+    position: relative;
+}
+
