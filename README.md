@@ -1,4 +1,4 @@
-# Cube Animations
+# Cube Animation
 
 ## Description
 
